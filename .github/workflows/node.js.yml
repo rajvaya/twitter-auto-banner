@@ -1,0 +1,24 @@
+name: Twitter Auto Banner
+
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          check-latest: true
+      - run: npm install
+      - run: npm run change-banner
+        env:
+          ck2 : ${{ secrets.ck2 }}
+          cks2: ${{ secrets.cks2 }}
+          at2: ${{ secrets.at2 }}
+          ats2: ${{ secrets.ats2}}
