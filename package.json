@@ -1,0 +1,15 @@
+{
+  "name": "twitter-auto-banner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "change-banner": "node index"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "image-downloader": "^4.0.2",
+    "node-fetch": "^2.6.1",
+    "twitter-api-client": "^1.3.8"
+  }
+}
