@@ -36,8 +36,9 @@ async function makeImage() {
           y: 100,
           fill: "#FFFFFF",
           stroke: "#000000",
+          strokewidth : 4,
           shadowColor: "#AABBCC",
-          text: "This Banner Updates Automatically Currenlty Buildidng this so You May See Random Things here",
+          text: "This Banner Updates Automatically Currently Building this so You May See Random Things here",
           fontSize: 60,
           fontFamily: "Calibri",
         })
