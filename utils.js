@@ -31,12 +31,12 @@ async function makeImage() {
       layer.add(image);
       layer.add(
         new Konva.Text({
-          width:1300,
+          width: 1300,
           x: 100,
           y: 100,
           fill: "#FFFFFF",
           stroke: "#000000",
-
+          shadowColor: "#AABBCC",
           text: "This Banner Updates Automatically Currenlty Buildidng this so You May See Random Things here",
           fontSize: 60,
           fontFamily: "Calibri",
