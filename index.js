@@ -1,6 +1,7 @@
-
-const { setRandomBanner } = require("./utils");
+const { setRandomBanner, makeImage } = require("./utils");
 
 (async function () {
-  await setRandomBanner();
+  // await setRandomBanner();
+   await makeImage();
+  // console.log(data);
 })();
