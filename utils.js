@@ -29,20 +29,20 @@ async function makeImage() {
     async function (image) {
       // image is Konva.Image instance
       layer.add(image);
-      layer.add(
-        new Konva.Text({
-          width: 1300,
-          x: 100,
-          y: 100,
-          fill: "#FFFFFF",
-          stroke: "#000000",
-          strokewidth : 4,
-          shadowColor: "#AABBCC",
-          text: "This Banner Updates Automatically Currently Building this so You May See Random Things here",
-          fontSize: 60,
-          fontFamily: "Calibri",
-        })
-      );
+      // layer.add(
+      //   new Konva.Text({
+      //     width: 1300,
+      //     x: 100,
+      //     y: 100,
+      //     fill: "#FFFFFF",
+      //     stroke: "#000000",
+      //     strokewidth : 4,
+      //     shadowColor: "#AABBCC",
+      //     text: "This Banner Updates Automatically Currently Building this so You May See Random Things here",
+      //     fontSize: 60,
+      //     fontFamily: "Calibri",
+      //   })
+      // );
       layer.draw();
       var data = stage.toDataURL();
       // // console.log(data);
@@ -99,7 +99,7 @@ async function setRandomBanner() {
     var url = "";
 
     await fetch(
-      "https://source.unsplash.com/random/1500x500?nature,mountains,beach,abstarct,"
+      "https://source.unsplash.com/random/1500x500?abstarct"
     )
       .then((res) => res)
       .then((body) => {
